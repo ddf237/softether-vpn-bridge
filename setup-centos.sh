@@ -84,6 +84,7 @@ sleep 2
 
 #Set DNSMASQ
 cat <<EOF >> /etc/dnsmasq.conf
+port=0
 interface=tap_soft
 dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_soft,3,192.168.7.1
