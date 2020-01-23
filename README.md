@@ -1,6 +1,6 @@
 # Softether-vpn-bridge optimized install
 
-Instructions for Centos 7.1503.01 x64:
+Instructions for Centos 7 x64:
 
 1 - Login as root
 
