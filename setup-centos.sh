@@ -21,7 +21,7 @@ read USER_PASSWORD
 echo "+++ Wait until the installation finished... +++"
 
 #set version to download
-latest="v4.31-9727-beta-2019.11.18"
+latest="v4.32-9731-beta-2020.01.01"
 arch="64bit_-_Intel_x64_or_AMD64"
 arch2="x64-64bit"
 
@@ -87,13 +87,13 @@ cat <<EOF >> /etc/dnsmasq.conf
 interface=tap_soft
 dhcp-range=tap_soft,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_soft,3,192.168.7.1
-dhcp-option=tap_soft,6,8.8.8.8,8.8.4.4
+dhcp-option=tap_soft,6,1.1.1.1,1.0.0.1
 EOF
 
 
 
 #Create SoftEther VPN Server service
-wget -P /etc/init.d https://raw.githubusercontent.com/rolsite/softether-vpn-bridge/master/vpnserver
+wget -P /etc/init.d https://raw.githubusercontent.com/ddf237/softether-vpn-bridge/master/vpnserver
 chmod 755 /etc/init.d/vpnserver
 chkconfig --add vpnserver
 iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
