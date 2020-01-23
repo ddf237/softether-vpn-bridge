@@ -5,7 +5,7 @@ Instructions for Ubuntu 16.04 x64:
 
 1 - Login as root
 
-2 - wget https://raw.githubusercontent.com/rolsite/softether-vpn-bridge/master/setup-ubuntu.sh
+2 - wget https://raw.githubusercontent.com/ddf237/softether-vpn-bridge/master/setup-centos.sh
 
 3 - chmod 755 setup-ubuntu.sh
 
