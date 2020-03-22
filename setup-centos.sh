@@ -21,7 +21,7 @@ read USER_PASSWORD
 echo "+++ Wait until the installation finished... +++"
 
 #set version to download
-latest="v4.32-9731-beta-2020.01.01"
+latest="v4.34-9744-beta-2020.03.20"
 arch="64bit_-_Intel_x64_or_AMD64"
 arch2="x64-64bit"
 
